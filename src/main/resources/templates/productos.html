@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Consulta de los productos de una categoría</h1>
+
+    <div class="example-1 card" th:each="usuario: ${usuarios}">
+        <span class="day" th:text="${usuario.email}"></span>
+        <span class="month" th:text="${usuario.password}"></span>
+        <span class="year" th:text="${usuario.activo}"></span>
+        <span class="year" th:text="${usuario.permiso}"></span>
+    </div>
+
+</body>
+</html>

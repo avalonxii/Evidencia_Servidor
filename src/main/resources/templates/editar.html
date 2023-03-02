@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Añadir Stock de un producto</h1>
+
+    <div class="container__form container--signup">
+        <form class="form" id="form1" th:action="@{/comprobarRegistro}" th:object="${register}" method="post">
+            <h2 class="form__title">Registrase</h2>
+            <input type="email" placeholder="Email" class="input" th:field="*{email}"/>
+            <input type="password" placeholder="Password" class="input" th:field="*{password}"/>
+            <input type="submit" value="Registrarse" class="btn" />
+        </form>
+    </div>
+
+</body>
+</html>
